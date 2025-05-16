@@ -10,9 +10,7 @@ Alternatif 3:
 Yummy'de yemek yemek sadece karın doyurmak değil, aynı zamanda keyifli bir deneyimdir.
 Doğal ve taze ürünlerle hazırlanan tariflerimiz, hem sağlıklı hem de lezzetlidir. Misafirlerimiz için en iyisini sunmayı ilke edindik.
 
-
----------------------------------------------------
-
+------------------------------------------------------------------------------------------------------------------------------
 
 1. Başlık: Lezzet dolu anlar sunuyoruz
 Metin: Usta şeflerimizle hazırlanan tarifler sayesinde sıradan bir yemeği özel bir deneyime dönüştürüyoruz.
@@ -31,7 +29,3 @@ Metin: Vakit kaybetmeden nefis bir öğün isteyenler için hızlı ve güler y�
 
 6. Başlık: Herkese hitap eden geniş menü
 Metin: Vegan, vejetaryen ya da klasik tatlar… Her damak zevkine uygun çeşitlerle karşınızdayız.
-
----------------------------------------------------
-
-

@@ -1,0 +1,48 @@
+﻿﻿[
+  {
+    "nameSurname": "Ahmet Korkmaz",
+    "title": "Baş Şef",
+    "description": "20 yıllık deneyimiyle Türk ve Akdeniz mutfağında ustalaşmış, restoranımızın lezzet mimarı.",
+    "imageUrl": "test"
+  },
+  {
+    "nameSurname": "Elif Yıldız",
+    "title": "Tatlı Şefi",
+    "description": "Fransız pastacılığı eğitimi almış, özgün tatlı sunumlarıyla misafirlerimize görsel ve lezzet şöleni yaşatıyor.",
+    "imageUrl": "test"
+  },
+  {
+    "nameSurname": "Mehmet Alkan",
+    "title": "Izgara Uzmanı",
+    "description": "Etin her halini bilen, özel marine tarifleri ve pişirme teknikleriyle müdavim kazandıran bir ustamız.",
+    "imageUrl": "test"
+  }
+]
+
+------------------------------------------------------------------------------------------------------------------------------
+
+[
+  {
+    "nameSurname": "Mehmet Yılmaz",
+    "title": "Baş Aşçı",
+    "description": "20 yılı aşkın deneyimiyle Türk ve dünya mutfağında uzman. Menülerimizin lezzet mimarı.",
+    "imageUrl": "https://example.com/images/mehmet_yilmaz.jpg"
+  },
+  {
+    "nameSurname": "Ayşe Demir",
+    "title": "Pastane Şefi",
+    "description": "Tatlı sanatında usta. Özel gün pastaları ve günlük tatlılarımız Ayşe Şef’in ellerinden çıkıyor.",
+    "imageUrl": "https://example.com/images/ayse_demir.jpg"
+  },
+  {
+    "nameSurname": "Carlos Ramirez",
+    "title": "Uluslararası Mutfak Şefi",
+    "description": "İspanyol ve Latin Amerika mutfağında uzman. Restoranımıza egzotik tatlar kazandırıyor.",
+    "imageUrl": "https://example.com/images/carlos_ramirez.jpg"
+  }
+]
+
+
+------------------------------------------------------------------------------------------------------------------------------
+
+/yummy-red-1.0.0/assets/img/chefs/chefs-1.jpg

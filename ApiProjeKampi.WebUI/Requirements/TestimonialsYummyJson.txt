@@ -60,3 +60,38 @@
     "imageUrl": "test"
   }
 ]
+
+------------------------------------------------------------------------------------------------------------------------------
+
+[
+  {
+    "nameSurname": "Ayşe Yılmaz",
+    "title": "Gıda Mühendisi",
+    "comment": "Yemeklerin lezzeti ve sunumu harikaydı. Özellikle fırınlanmış deniz ürünleri favorim oldu.",
+    "imageUrl": "test"
+  },
+  {
+    "nameSurname": "Mehmet Kaya",
+    "title": "Turizm Rehberi",
+    "comment": "Şehir dışından gelen misafirlerimi mutlaka bu restorana getiriyorum. Atmosferi çok sıcak ve samimi.",
+    "imageUrl": "test"
+  },
+  {
+    "nameSurname": "Elif Demir",
+    "title": "İç Mimar",
+    "comment": "Dekorasyon ve ambiyans inanılmazdı. Sadece yemek değil, mekân da başlı başına bir deneyimdi.",
+    "imageUrl": "test"
+  },
+  {
+    "nameSurname": "Ahmet Şahin",
+    "title": "İşletme Sahibi",
+    "comment": "Rezervasyon sistemleri çok pratik, servis hızlı ve güler yüzlüydü. Tavsiye ederim!",
+    "imageUrl": "test"
+  },
+  {
+    "nameSurname": "Zeynep Koç",
+    "title": "Diyetisyen",
+    "comment": "Sağlıklı ve lezzetli seçeneklerin bir arada sunulması benim için çok önemliydi. Harika menü!",
+    "imageUrl": "test"
+  }
+]
