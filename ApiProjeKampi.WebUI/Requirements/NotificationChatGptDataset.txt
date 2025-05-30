@@ -1,0 +1,65 @@
+﻿﻿[
+  {
+    "description": "Yeni bir rezervasyon talebi alındı. Ahmet Demir isimli müşteri 4 kişilik masa için 20:00 saatine rezervasyon yaptı.",
+    "iconUrl": "/icons/reservation.png",
+    "notificationDate": "2025-05-27T08:30:00",
+    "isRead": false
+  },
+  {
+    "description": "Bugün saat 19:00'daki doğum günü organizasyonu için özel süslemeler unutmayın.",
+    "iconUrl": "/icons/birthday.png",
+    "notificationDate": "2025-05-27T07:15:00",
+    "isRead": false
+  },
+  {
+    "description": "Mutfak stoğunda domates, mozarella ve fesleğen miktarları azaldı. Günlük sipariş kontrolü yapılmalı.",
+    "iconUrl": "/icons/warning.png",
+    "notificationDate": "2025-05-26T18:10:00",
+    "isRead": true
+  },
+  {
+    "description": "Yeni yorum: Kullanıcı Selin Aydın, restoran hakkında 5 yıldız verdi ve 'Yemekler harika!' yorumu yaptı.",
+    "iconUrl": "/icons/review.png",
+    "notificationDate": "2025-05-26T21:45:00",
+    "isRead": true
+  },
+  {
+    "description": "Bugünkü menüye 'Izgara Levrek' ve 'Köz Patlıcan Mezesi' eklendi. Menü sayfasını güncellemeyi unutmayın.",
+    "iconUrl": "/icons/menu.png",
+    "notificationDate": "2025-05-27T09:00:00",
+    "isRead": false
+  }
+
+
+
+  {
+    "description": "Rezervasyonunuz başarıyla oluşturuldu. Sizi 20:00'de bekliyoruz!",
+    "iconUrl": "https://example.com/icons/reservation.png",
+    "notificationDate": "2025-05-30T14:00:00.000Z",
+    "isRead": false
+  },
+  {
+    "description": "Yeni menümüz yayında! Lezzetli sürprizler sizi bekliyor.",
+    "iconUrl": "https://example.com/icons/menu.png",
+    "notificationDate": "2025-05-29T10:30:00.000Z",
+    "isRead": false
+  },
+  {
+    "description": "Siparişiniz hazırlanıyor. Tahmini teslimat süresi 30 dakikadır.",
+    "iconUrl": "https://example.com/icons/order.png",
+    "notificationDate": "2025-05-30T15:45:00.000Z",
+    "isRead": true
+  },
+  {
+    "description": "Bugüne özel %20 indirim fırsatını kaçırmayın!",
+    "iconUrl": "https://example.com/icons/discount.png",
+    "notificationDate": "2025-05-30T08:00:00.000Z",
+    "isRead": false
+  },
+  {
+    "description": "Restoranımıza yaptığınız yorum için teşekkür ederiz!",
+    "iconUrl": "https://example.com/icons/thanks.png",
+    "notificationDate": "2025-05-28T18:20:00.000Z",
+    "isRead": true
+  }
+]
