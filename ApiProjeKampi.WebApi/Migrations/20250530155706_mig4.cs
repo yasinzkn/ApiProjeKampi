@@ -17,7 +17,7 @@ namespace ApiProjeKampi.WebApi.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Description = table.Column<string>(type: "nvarchar(250)", nullable: false),
                     IconUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    NotificationDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    NotificationDate = table.Column<DateTime?>(type: "datetime2", nullable: false),
                     IsRead = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>

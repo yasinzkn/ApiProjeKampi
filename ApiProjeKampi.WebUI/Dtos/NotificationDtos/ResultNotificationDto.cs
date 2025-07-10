@@ -1,5 +1,4 @@
-﻿
-namespace ApiProjeKampi.WebUI.Dtos.NotificationDtos
+﻿namespace ApiProjeKampi.WebUI.Dtos.NotificationDtos
 {
     public class ResultNotificationDto
     {

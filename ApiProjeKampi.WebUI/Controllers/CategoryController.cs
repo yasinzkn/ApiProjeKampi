@@ -52,7 +52,6 @@ namespace ApiProjeKampi.WebUI.Controllers
             var client = _httpClientFactory.CreateClient();
             await client.DeleteAsync("https://localhost:7060/api/Categories?id=" + id);
             return RedirectToAction("CategoryList");
-            return View();
         }
 
         [HttpGet]

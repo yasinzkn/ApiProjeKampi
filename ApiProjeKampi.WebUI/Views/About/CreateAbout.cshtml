@@ -1,7 +1,7 @@
-﻿@model CreateFeatureDto
+﻿@model CreateAboutDto
 
 @{
-    ViewData["Title"] = "CreateFeature";
+    ViewData["Title"] = "CreateAbout";
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
 
@@ -11,32 +11,34 @@
             <div class="col-12 col-md-12 col-lg-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4>Öne Çıkan Alan Ekleme Sayfası</h4>
+                        <h4>Hakkımızda Alanı Ekleme Sayfası</h4>
                     </div>
                     <div class="card-body">
                         <form method="post">
                             <label>Başlık</label>
                             <input type="text" asp-for="Title" class="form-control" />
                             <br />
-                            <label>Alt Başlık</label>
-                            <input type="text" asp-for="SubTitle" class="form-control" />
-                            <br />
-                            <label>Açıklama</label>
-                            <input type="text" asp-for="Description" class="form-control" />
+                            <label>Rezervasyon Numarası</label>
+                            <input type="text" asp-for="ReservationNumber" class="form-control" />
                             <br />
                             <label>Görsel URL</label>
                             <input type="text" asp-for="ImageUrl" class="form-control" />
                             <br />
-                            <label>Video URL (Embed Link)</label>
+                            <label>Video Kapak Görseli</label>
+                            <input type="text" asp-for="VideoCoverImageUrl" class="form-control" />
+                            <br />
+                            <label>Video URL (Embed Linki)</label>
                             <input type="text" asp-for="VideoUrl" class="form-control" />
                             <br />
-                            <button class="btn btn-primary">Öne Çıkan Alanı Oluştur</button>
+                            <label>Açıklama</label>
+                            <textarea class="form-control" rows="5" asp-for="Description"></textarea>
+                            <br />
+                            <button class="btn btn-primary">Hakkımızda Alanı Oluştur</button>
                         </form>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </div>
 </section>
+

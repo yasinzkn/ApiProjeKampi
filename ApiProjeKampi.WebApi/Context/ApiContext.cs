@@ -33,5 +33,7 @@ namespace ApiProjeKampi.WebApi.Context
         public DbSet<YummyEvent> YummyEvents { get; set; }
 
         public DbSet<Notification> Notifications { get; set; }
+
+        public DbSet<About> Abouts { get; set; }
     }
 }
