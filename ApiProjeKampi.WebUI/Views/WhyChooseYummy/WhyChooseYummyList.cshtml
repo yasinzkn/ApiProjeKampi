@@ -1,7 +1,7 @@
-﻿@model List<ResultCategoryDto>
+﻿@model List<ResultWhyChooseYummyDto>
 
 @{
-    ViewData["Title"] = "CategoryList";
+    ViewData["Title"] = "WhyChooseYummyList";
     Layout = "~/Views/AdminLayout/Index.cshtml";
     int count = 0;
 }
@@ -13,14 +13,15 @@
             <div class="col-12 col-md-12 col-lg-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4>Kategori Listesi</h4>
+                        <h4>Neden Bizi Seçmelisiniz Listesi</h4>
                     </div>
                     <div class="card-body">
                         <table class="table">
                             <thead>
                                 <tr>
                                     <th scope="col">#</th>
-                                    <th scope="col">Kategori Adı</th>
+                                    <th scope="col">Başlık</th>
+                                    <th scope="col">Açıklama</th>
                                     <th scope="col">Sil</th>
                                     <th scope="col">Güncelle</th>
                                 </tr>
@@ -31,14 +32,15 @@
                                     count++;
                                     <tr>
                                         <th scope="row">@count</th>
-                                        <td>@item.CategoryName</td>
-                                        <td><a href="/Category/DeleteCategory/@item.CategoryId/" class="btn btn-danger">Sil</a></td>
-                                        <td><a href="/Category/UpdateCategory/@item.CategoryId/" class="btn btn-success">Güncelle</a></td>
+                                        <td>@item.Title</td>
+                                        <td>@item.Description</td>
+                                        <td><a href="/WhyChooseYummy/DeleteWhyChooseYummy/@item.ServiceId/" class="btn btn-danger">Sil</a></td>
+                                        <td><a href="/WhyChooseYummy/UpdateWhyChooseYummy/@item.ServiceId/" class="btn btn-success">Güncelle</a></td>
                                     </tr>
                                 }
                             </tbody>
                         </table>
-                    <a href="/Category/CreateCategory/" class="btn btn-info">Yeni Kategori Girişi</a>
+                        <a href="/WhyChooseYummy/CreateWhyChooseYummy/" class="btn btn-info">Yeni Alan Girişi</a>
                     </div>
                 </div>
             </div>
