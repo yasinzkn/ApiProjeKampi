@@ -6,7 +6,8 @@
     "messageDetails": "Merhaba, bu cumartesi akşamı 4 kişilik bir masa ayırtmak istiyoruz. Saat 20:00 uygun olur mu?",
     "sendDate": "2025-05-26T18:45:00",
     "isRead": false
-  },
+  }
+
   {
     "nameSurname": "Selin Aydın",
     "email": "selinaydin@hotmail.com",
@@ -14,7 +15,8 @@
     "messageDetails": "Merhaba, web sitenizde vegan seçenekleri göremedim. Menünüzde vegan yemekler mevcut mu?",
     "sendDate": "2025-05-25T14:20:00",
     "isRead": false
-  },
+  }
+
   {
     "nameSurname": "Mehmet Uslu",
     "email": "mehmet.uslu@gmail.com",
@@ -22,7 +24,8 @@
     "messageDetails": "Hafta sonları düzenlediğiniz canlı müzik geceleri için rezervasyon gerekiyor mu?",
     "sendDate": "2025-05-24T19:15:00",
     "isRead": false
-  },
+  }
+
   {
     "nameSurname": "Buse Yıldız",
     "email": "buseyildiz@yahoo.com",
@@ -30,7 +33,8 @@
     "messageDetails": "Merhaba, 10 kişilik bir doğum günü kutlaması için rezervasyon yapmak istiyorum. Özel süsleme yapıyor musunuz?",
     "sendDate": "2025-05-23T21:30:00",
     "isRead": false
-  },
+  }
+
   {
     "nameSurname": "Ali Karaca",
     "email": "alikaraca@mail.com",
@@ -38,7 +42,8 @@
     "messageDetails": "Geçen hafta restoranınızda çok güzel bir akşam geçirdik. Servis ve yemekler harikaydı. Teşekkür ederiz!",
     "sendDate": "2025-05-22T20:10:00",
     "isRead": true
-  },
+  }
+
   {
     "nameSurname": "Elif Kurt",
     "email": "elif.kurt@gmail.com",
@@ -46,7 +51,8 @@
     "messageDetails": "Web sitenizde menü fiyatlarını göremedim. Ana yemeklerin ortalama fiyatlarını öğrenebilir miyim?",
     "sendDate": "2025-05-21T16:55:00",
     "isRead": true
-  },
+  }
+
   {
     "nameSurname": "Murat Kaya",
     "email": "muratkaya@gmail.com",
@@ -54,7 +60,8 @@
     "messageDetails": "Paket servis hizmetiniz var mı? Özellikle öğle saatlerinde sipariş vermek istiyoruz.",
     "sendDate": "2025-05-20T12:05:00",
     "isRead": true
-  },
+  }
+
   {
     "nameSurname": "Derya Polat",
     "email": "deryapolat@hotmail.com",
@@ -62,7 +69,8 @@
     "messageDetails": "Glutensiz beslenmek zorundayım. Menüde buna uygun yemekleriniz mevcut mu?",
     "sendDate": "2025-05-19T10:30:00",
     "isRead": true
-  },
+  }
+
   {
     "nameSurname": "Okan Tuncer",
     "email": "okantuncer@outlook.com",
@@ -70,7 +78,8 @@
     "messageDetails": "Şirket olarak 12 kişilik bir iş yemeği düzenlemek istiyoruz. Özel bir salonunuz var mı?",
     "sendDate": "2025-05-18T09:45:00",
     "isRead": true
-  },
+  }
+
   {
     "nameSurname": "Melis Kalkan",
     "email": "meliskalkan@gmail.com",
@@ -80,7 +89,7 @@
     "isRead": true
   }
 
-
+  --------------------------------------------------------------------------------------------------------------------------
 
   {
     "nameSurname": "Ayşe Yılmaz",
@@ -89,7 +98,8 @@
     "messageDetails": "Merhaba, cumartesi akşamı için 4 kişilik rezervasyon yaptırmak istiyorum. Yardımcı olabilir misiniz?",
     "sendDate": "2025-05-28T18:45:00",
     "isRead": true
-  },
+  }
+
   {
     "nameSurname": "Mehmet Karaca",
     "email": "mehmet.karaca@example.com",
@@ -97,7 +107,8 @@
     "messageDetails": "Vegan misafirlerimiz için menünüzde hangi yemekler mevcut?",
     "sendDate": "2025-05-27T11:15:00",
     "isRead": false
-  },
+  }
+
   {
     "nameSurname": "Elif Demir",
     "email": "elif.demir@example.com",
@@ -105,7 +116,8 @@
     "messageDetails": "Oğlumun doğum günü için restoranınızda kutlama yapmak istiyoruz. Paketleriniz hakkında bilgi verir misiniz?",
     "sendDate": "2025-05-25T16:30:00",
     "isRead": true
-  },
+  }
+
   {
     "nameSurname": "Ali Can",
     "email": "ali.can@example.com",
@@ -113,7 +125,8 @@
     "messageDetails": "Dün akşam restoranda yaşadığımız servis gecikmesinden dolayı şikayetimi iletmek istiyorum.",
     "sendDate": "2025-05-29T21:10:00",
     "isRead": false
-  },
+  }
+
   {
     "nameSurname": "Zeynep Koç",
     "email": "zeynep.koc@example.com",
@@ -121,7 +134,8 @@
     "messageDetails": "Geçen hafta yemekler ve hizmet mükemmeldi. Tüm ekibe teşekkür ederim.",
     "sendDate": "2025-05-24T14:00:00",
     "isRead": true
-  },
+  }
+
   {
     "nameSurname": "Burak Aydın",
     "email": "burak.aydin@example.com",
@@ -129,7 +143,8 @@
     "messageDetails": "Öğrenciler için herhangi bir indirim veya kampanyanız var mı?",
     "sendDate": "2025-05-26T13:50:00",
     "isRead": false
-  },
+  }
+
   {
     "nameSurname": "Seda Arslan",
     "email": "seda.arslan@example.com",
@@ -137,7 +152,8 @@
     "messageDetails": "Glutensiz beslenenler için menünüzde uygun alternatifler bulunuyor mu?",
     "sendDate": "2025-05-22T09:25:00",
     "isRead": true
-  },
+  }
+
   {
     "nameSurname": "Kemal Şahin",
     "email": "kemal.sahin@example.com",
@@ -145,7 +161,8 @@
     "messageDetails": "Restoranınızın yakınında otopark var mı?",
     "sendDate": "2025-05-23T10:40:00",
     "isRead": true
-  },
+  }
+
   {
     "nameSurname": "Melis Güneş",
     "email": "melis.gunes@example.com",
@@ -153,7 +170,8 @@
     "messageDetails": "Dün akşam çantamı masada unuttuğumu fark ettim. Size ulaşmak istedim.",
     "sendDate": "2025-05-29T08:10:00",
     "isRead": false
-  },
+  }
+
   {
     "nameSurname": "Serkan Yıldız",
     "email": "serkan.yildiz@example.com",

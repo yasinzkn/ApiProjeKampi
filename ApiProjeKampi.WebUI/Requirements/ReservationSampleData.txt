@@ -1,0 +1,207 @@
+﻿[
+  {
+    "nameSurname": "Ahmet Yılmaz",
+    "email": "ahmet.yilmaz@example.com",
+    "phoneNumber": "+905321112233",
+    "reservationDate": "2025-07-20T19:00:00.000Z",
+    "reservationTime": "19:00",
+    "countofPeople": 4,
+    "message": "Doğum günü kutlaması için pencere kenarı masa rica ediyorum.",
+    "reservationStatus": "Onay Bekliyor"
+  },
+  {
+    "nameSurname": "Elif Kaya",
+    "email": "elif.kaya@example.com",
+    "phoneNumber": "+905551234567",
+    "reservationDate": "2025-07-21T20:30:00.000Z",
+    "reservationTime": "20:30",
+    "countofPeople": 2,
+    "message": "Sessiz bir köşe masa tercih ederiz.",
+    "reservationStatus": "Onay Bekliyor"
+  },
+  {
+    "nameSurname": "Mehmet Demir",
+    "email": "mehmet.demir@example.com",
+    "phoneNumber": "+905071234567",
+    "reservationDate": "2025-07-19T18:00:00.000Z",
+    "reservationTime": "18:00",
+    "countofPeople": 3,
+    "message": "Yüksek sandalye gerekiyorsa belirtin lütfen.",
+    "reservationStatus": "Onay Bekliyor"
+  },
+  {
+    "nameSurname": "Ayşe Çelik",
+    "email": "ayse.celik@example.com",
+    "phoneNumber": "+905331234567",
+    "reservationDate": "2025-07-22T21:00:00.000Z",
+    "reservationTime": "21:00",
+    "countofPeople": 5,
+    "message": "Geliş saatimizde bir değişiklik olabilir, bilgilendireceğim.",
+    "reservationStatus": "Onay Bekliyor"
+  },
+  {
+    "nameSurname": "Canan Karaca",
+    "email": "canan.karaca@example.com",
+    "phoneNumber": "+905361234567",
+    "reservationDate": "2025-07-23T19:30:00.000Z",
+    "reservationTime": "19:30",
+    "countofPeople": 6,
+    "message": "Çocuk menüsü var mı?",
+    "reservationStatus": "Onay Bekliyor"
+  },
+  {
+    "nameSurname": "Burak Aydın",
+    "email": "burak.aydin@example.com",
+    "phoneNumber": "+905421234567",
+    "reservationDate": "2025-07-24T20:00:00.000Z",
+    "reservationTime": "20:00",
+    "countofPeople": 2,
+    "message": "Romantik bir masa mümkünse çok sevinirim.",
+    "reservationStatus": "Onay Bekliyor"
+  },
+  {
+    "nameSurname": "Zeynep Güneş",
+    "email": "zeynep.gunes@example.com",
+    "phoneNumber": "+905061234567",
+    "reservationDate": "2025-07-25T17:00:00.000Z",
+    "reservationTime": "17:00",
+    "countofPeople": 7,
+    "message": "Grup yemeği için rezervasyon.",
+    "reservationStatus": "Onay Bekliyor"
+  },
+  {
+    "nameSurname": "Kemal Uçar",
+    "email": "kemal.ucar@example.com",
+    "phoneNumber": "+905341234567",
+    "reservationDate": "2025-07-26T19:45:00.000Z",
+    "reservationTime": "19:45",
+    "countofPeople": 3,
+    "message": "Önceden gelme durumum olabilir.",
+    "reservationStatus": "Onay Bekliyor"
+  },
+  {
+    "nameSurname": "Melis Arslan",
+    "email": "melis.arslan@example.com",
+    "phoneNumber": "+905441234567",
+    "reservationDate": "2025-07-27T20:15:00.000Z",
+    "reservationTime": "20:15",
+    "countofPeople": 4,
+    "message": "Vegan menü alternatifleri mevcut mu?",
+    "reservationStatus": "Onay Bekliyor"
+  },
+  {
+    "nameSurname": "Emre Şahin",
+    "email": "emre.sahin@example.com",
+    "phoneNumber": "+905391234567",
+    "reservationDate": "2025-07-28T18:30:00.000Z",
+    "reservationTime": "18:30",
+    "countofPeople": 2,
+    "message": "Doğum günü sürprizi için yardımcı olabilir misiniz?",
+    "reservationStatus": "Onay Bekliyor"
+  }
+]
+
+----------------------------------------------------------------------------------------------------------------------------
+
+﻿[
+  {
+    "nameSurname": "Ahmet Yılmaz",
+    "email": "ahmetyilmaz@example.com",
+    "phoneNumber": "+905301112233",
+    "reservationDate": "2025-07-17T19:30:00.000Z",
+    "reservationTime": "19:30",
+    "countofPeople": 2,
+    "message": "Pencere kenarı tercihimizdir.",
+    "reservationStatus": "Onay Bekliyor"
+  },
+  {
+    "nameSurname": "Elif Demir",
+    "email": "elifdemir@example.com",
+    "phoneNumber": "+905321234567",
+    "reservationDate": "2025-07-18T20:00:00.000Z",
+    "reservationTime": "20:00",
+    "countofPeople": 4,
+    "message": "Doğum günü kutlaması olacak.",
+    "reservationStatus": "Onay Bekliyor"
+  },
+  {
+    "nameSurname": "Mehmet Kaya",
+    "email": "mehmetkaya@example.com",
+    "phoneNumber": "+905421112244",
+    "reservationDate": "2025-07-19T21:00:00.000Z",
+    "reservationTime": "21:00",
+    "countofPeople": 3,
+    "message": "Balkon tarafı mümkünse.",
+    "reservationStatus": "Onay Bekliyor"
+  },
+  {
+    "nameSurname": "Ayşe Çelik",
+    "email": "aysecelik@example.com",
+    "phoneNumber": "+905551112233",
+    "reservationDate": "2025-07-20T18:45:00.000Z",
+    "reservationTime": "18:45",
+    "countofPeople": 2,
+    "message": "Sessiz bir masa tercih ederiz.",
+    "reservationStatus": "Onay Bekliyor"
+  },
+  {
+    "nameSurname": "Mert Özkan",
+    "email": "mertozkan@example.com",
+    "phoneNumber": "+905661234567",
+    "reservationDate": "2025-07-21T19:00:00.000Z",
+    "reservationTime": "19:00",
+    "countofPeople": 6,
+    "message": "Toplantı sonrası akşam yemeği.",
+    "reservationStatus": "Onay Bekliyor"
+  },
+  {
+    "nameSurname": "Zeynep Uçar",
+    "email": "zeynepucar@example.com",
+    "phoneNumber": "+905441112299",
+    "reservationDate": "2025-07-22T20:30:00.000Z",
+    "reservationTime": "20:30",
+    "countofPeople": 3,
+    "message": "Çocuk sandalyesi gerekiyor.",
+    "reservationStatus": "Onay Bekliyor"
+  },
+  {
+    "nameSurname": "Burak Aksoy",
+    "email": "burakaksoy@example.com",
+    "phoneNumber": "+905331113355",
+    "reservationDate": "2025-07-23T21:15:00.000Z",
+    "reservationTime": "21:15",
+    "countofPeople": 2,
+    "message": "Romantik masa rica ediyoruz.",
+    "reservationStatus": "Onay Bekliyor"
+  },
+  {
+    "nameSurname": "Selin Arslan",
+    "email": "selinarslan@example.com",
+    "phoneNumber": "+905371117788",
+    "reservationDate": "2025-07-24T20:00:00.000Z",
+    "reservationTime": "20:00",
+    "countofPeople": 5,
+    "message": "Manzaralı masa tercihi.",
+    "reservationStatus": "Onay Bekliyor"
+  },
+  {
+    "nameSurname": "Kerem Güngör",
+    "email": "keremgungor@example.com",
+    "phoneNumber": "+905601119988",
+    "reservationDate": "2025-07-25T19:45:00.000Z",
+    "reservationTime": "19:45",
+    "countofPeople": 4,
+    "message": "Dış alan tercihimizdir.",
+    "reservationStatus": "Onay Bekliyor"
+  },
+  {
+    "nameSurname": "Nazlı Korkmaz",
+    "email": "nazlikorkmaz@example.com",
+    "phoneNumber": "+905301112244",
+    "reservationDate": "2025-07-26T18:30:00.000Z",
+    "reservationTime": "18:30",
+    "countofPeople": 1,
+    "message": "Yalnız masa rica ederim.",
+    "reservationStatus": "Onay Bekliyor"
+  }
+]
