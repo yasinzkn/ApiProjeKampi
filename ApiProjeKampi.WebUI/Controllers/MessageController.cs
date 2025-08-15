@@ -132,7 +132,7 @@ namespace ApiProjeKampi.WebUI.Controllers
         public async Task<IActionResult> SendMessage(CreateMessageDto createMessageDto)
         {
             var client = new HttpClient();
-            var apiKey = "";
+            var apiKey = "ghfh";
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", apiKey);
 
             try
