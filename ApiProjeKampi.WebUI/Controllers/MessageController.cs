@@ -142,8 +142,11 @@ namespace ApiProjeKampi.WebUI.Controllers
                     inputs = createMessageDto.MessageDetails
                 };
                 var translateJson = System.Text.Json.JsonSerializer.Serialize(translateRequestBody);
+
                 var translateContent = new StringContent(translateJson, Encoding.UTF8, "application/json");
+
                 var translateResponse = await client.PostAsync("https://api-inference.huggingface.co/models/Helsinki-NLP/opus-mt-tr-en", translateContent);
+
                 var translateResponseString = await translateResponse.Content.ReadAsStringAsync();
 
                 string englishText = createMessageDto.MessageDetails;
@@ -152,7 +155,6 @@ namespace ApiProjeKampi.WebUI.Controllers
                 {
                     var translateDoc = JsonDocument.Parse(translateResponseString);
                     englishText = translateDoc.RootElement[0].GetProperty("translation_text").GetString();
-                    //ViewBag.v = englishText;
                 }
 
                 var toxicRequestBody = new
@@ -160,8 +162,11 @@ namespace ApiProjeKampi.WebUI.Controllers
                     inputs = englishText
                 };
                 var toxicJson = System.Text.Json.JsonSerializer.Serialize(toxicRequestBody);
+
                 var toxicContent = new StringContent(toxicJson, Encoding.UTF8, "application/json");
+
                 var toxicResponse = await client.PostAsync("https://api-inference.huggingface.co/models/unitary/toxic-bert", toxicContent);
+
                 var toxicResponseString = await toxicResponse.Content.ReadAsStringAsync();
 
                 if(toxicResponseString.TrimStart().StartsWith("["))
@@ -189,7 +194,7 @@ namespace ApiProjeKampi.WebUI.Controllers
             }
             catch (Exception ex)
             {
-                createMessageDto.Status = "Onay Bekliyor"; ;
+                createMessageDto.Status = "Onay Bekliyor";
             }
 
             var client2 = _httpClientFactory.CreateClient();
