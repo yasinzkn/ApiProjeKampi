@@ -1,4 +1,4 @@
-﻿@model List<ResultGroupReservationDto>
+﻿﻿@model List<ResultGroupReservationDto>
 
 <div class="card shadow-sm border-0 rounded-4">
     <div class="card-header d-flex justify-content-between align-items-center bg-white py-3">
@@ -238,23 +238,19 @@
 </div>
 
 <style>
-    /* Satır hover efekti */
     .table-row-modern:hover {
         background-color: #f8f9fa !important;
         transition: 0.2s ease-in-out;
     }
 
-    /* Köşe yuvarlama */
     .rounded-4 {
         border-radius: 1rem !important;
     }
 
-    /* Modal başlığı degrade */
     .bg-gradient-primary {
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     }
 
-    /* Kart hover efekti */
     .detail-card {
         transition: all 0.3s ease;
     }
@@ -264,7 +260,6 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
-    /* Label stilleri */
     .detail-item label {
         font-size: 0.85rem;
         font-weight: 600;
@@ -272,32 +267,46 @@
         letter-spacing: 0.5px;
     }
 
-    /* BOZULAN MODAL AYARLARININ DÜZELTİLMESİ */
-
-    /* Bootstrap'ın kendi modal z-index değerleri kullanılmalı */
-    .modal,
-    .modal-backdrop {
-        z-index: unset !important;
-    }
-
-    /* Modal içerisindeki content (görsel bozulmasın diye bırakıyoruz) */
     .modal-content {
         overflow: hidden;
         background: white !important;
     }
 
-    /* Close butonları Bootstrap gibi çalışsın */
-    .modal-close-btn,
-    .modal-action-btn {
-        cursor: pointer;
+    .modal-backdrop {
+        background-color: rgba(0, 0, 0, 0.5) !important;
     }
 
-    /* Buton focus normal kalsın */
+    .modal {
+        z-index: 1050 !important;
+    }
+
+    .modal-backdrop {
+        z-index: 1040 !important;
+    }
+
+    .modal-close-btn {
+        z-index: 1060 !important;
+        position: relative !important;
+        cursor: pointer !important;
+        pointer-events: auto !important;
+    }
+
+    .modal-action-btn {
+        z-index: 1060 !important;
+        position: relative !important;
+        cursor: pointer !important;
+        pointer-events: auto !important;
+    }
+
     .btn-close:focus {
         box-shadow: none !important;
+        opacity: 1 !important;
     }
 
-    /* Badge renkleri */
+    .btn-close:hover {
+        opacity: 0.8 !important;
+    }
+
     .badge-success {
         background-color: #28a745 !important;
         color: white;
@@ -313,7 +322,6 @@
         color: white;
     }
 
-    /* Metin hizalama */
     .text-justify {
         text-align: justify;
         line-height: 1.6;
