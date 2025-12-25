@@ -1,5 +1,4 @@
-﻿@model List<ResultYummyEventDto>
-
+﻿﻿@model List<ResultYummyEventDto>
 @{
     ViewData["Title"] = "YummyEventList";
     Layout = "~/Views/AdminLayout/Index.cshtml";
@@ -12,48 +11,48 @@
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
         border: none;
     }
-
+    
     .modern-table {
         border-collapse: separate;
         border-spacing: 0;
     }
-
-        .modern-table thead th {
-            background: linear-gradient(135deg, #f8f9ff 0%, #e8ecff 100%);
-            color: #667eea;
-            font-weight: 600;
-            text-transform: uppercase;
-            font-size: 0.75rem;
-            letter-spacing: 0.5px;
-            padding: 1rem;
-            border: none;
-            border-bottom: 2px solid #667eea;
-        }
-
-            .modern-table thead th:first-child {
-                border-top-left-radius: 10px;
-            }
-
-            .modern-table thead th:last-child {
-                border-top-right-radius: 10px;
-            }
-
-        .modern-table tbody tr {
-            transition: all 0.3s ease;
-            border-bottom: 1px solid #f0f0f0;
-        }
-
-            .modern-table tbody tr:hover {
-                background-color: #f8f9ff;
-                transform: scale(1.01);
-                box-shadow: 0 2px 8px rgba(102, 126, 234, 0.1);
-            }
-
-        .modern-table tbody td {
-            padding: 1rem;
-            vertical-align: middle;
-        }
-
+    
+    .modern-table thead th {
+        background: linear-gradient(135deg, #f8f9ff 0%, #e8ecff 100%);
+        color: #667eea;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        letter-spacing: 0.5px;
+        padding: 1rem;
+        border: none;
+        border-bottom: 2px solid #667eea;
+    }
+    
+    .modern-table thead th:first-child {
+        border-top-left-radius: 10px;
+    }
+    
+    .modern-table thead th:last-child {
+        border-top-right-radius: 10px;
+    }
+    
+    .modern-table tbody tr {
+        transition: all 0.3s ease;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    
+    .modern-table tbody tr:hover {
+        background-color: #f8f9ff;
+        transform: scale(1.01);
+        box-shadow: 0 2px 8px rgba(102, 126, 234, 0.1);
+    }
+    
+    .modern-table tbody td {
+        padding: 1rem;
+        vertical-align: middle;
+    }
+    
     .event-icon {
         width: 45px;
         height: 45px;
@@ -65,7 +64,7 @@
         color: white;
         font-size: 1.2rem;
     }
-
+    
     .event-number {
         width: 35px;
         height: 35px;
@@ -78,20 +77,20 @@
         font-weight: bold;
         font-size: 0.9rem;
     }
-
+    
     .event-title {
         color: #333;
         font-size: 1rem;
         font-weight: 600;
     }
-
+    
     .event-description {
         color: #666;
         font-size: 0.9rem;
         line-height: 1.5;
         max-width: 450px;
     }
-
+    
     .price-badge {
         background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
         color: white;
@@ -102,7 +101,7 @@
         display: inline-block;
         box-shadow: 0 2px 8px rgba(67, 233, 123, 0.3);
     }
-
+    
     .modern-btn {
         padding: 0.5rem 1rem;
         border-radius: 8px;
@@ -114,27 +113,27 @@
         align-items: center;
         gap: 0.5rem;
     }
-
-        .modern-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        }
-
+    
+    .modern-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+    
     .btn-edit {
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         color: white;
     }
-
+    
     .btn-delete {
         background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
         color: white;
     }
-
+    
     .btn-view {
         background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
         color: white;
     }
-
+    
     .btn-create {
         background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
         color: white;
@@ -232,6 +231,53 @@
                             <i class="fas fa-info-circle"></i>
                             Toplam <strong style="color: #667eea;">@Model.Count</strong> etkinlik organizasyonu listelendi
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+-----------------------------------------------
+
+Default Kodlar:
+
+<section class="section">
+    <div class="section-body">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Etkinlik Organizasyon Listesi</h4>
+                    </div>
+                    <div class="card-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Organizasyon Başlığı</th>
+                                    <th scope="col">Organizasyon Açıklaması</th>
+                                    <th scope="col">Organizasyon Fiyatı</th>
+                                    <th scope="col">Sil</th>
+                                    <th scope="col">Güncelle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    count++;
+                                    <tr>
+                                        <th scope="row">@count</th>
+                                        <td>@item.Title</td>
+                                        <td>@item.Description</td>
+                                        <td>@item.Price</td>
+                                        <td><a href="/YummyEvent/DeleteYummyEvent/@item.YummyEventId/" class="btn btn-danger">Sil</a></td>
+                                        <td><a href="/YummyEvent/UpdateYummyEvent/@item.YummyEventId/" class="btn btn-success">Güncelle</a></td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                        <a href="/YummyEvent/CreateYummyEvent/" class="btn btn-info">Yeni Organizasyon Girişi</a>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,6 @@
-﻿﻿@model List<ResultWhyChooseYummyDto>
+﻿﻿@model List<ResultTestimonialDto>
 @{
-    ViewData["Title"] = "WhyChooseYummyList";
+    ViewData["Title"] = "TestimonialList";
     Layout = "~/Views/AdminLayout/Index.cshtml";
     int count = 0;
 }
@@ -53,29 +53,75 @@
         vertical-align: middle;
     }
     
-    .service-icon {
+    .customer-avatar {
         width: 45px;
         height: 45px;
-        background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
-        border-radius: 10px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
         color: white;
-        font-size: 1.2rem;
+        font-weight: bold;
+        font-size: 1.1rem;
     }
     
-    .title-text {
+    .customer-number {
+        width: 35px;
+        height: 35px;
+        background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        font-size: 0.9rem;
+    }
+    
+    .customer-name {
         color: #333;
         font-size: 1rem;
         font-weight: 600;
     }
     
-    .description-text {
-        color: #666;
+    .customer-title {
+        background: #e8f5e9;
+        color: #2e7d32;
+        padding: 0.3rem 0.8rem;
+        border-radius: 12px;
+        font-size: 0.85rem;
+        font-weight: 500;
+        display: inline-block;
+    }
+    
+    .comment-box {
+        background: #fffbf0;
+        border-left: 4px solid #ffa726;
+        padding: 0.8rem;
+        border-radius: 8px;
+        color: #555;
         font-size: 0.9rem;
         line-height: 1.5;
-        max-width: 600px;
+        font-style: italic;
+        max-width: 500px;
+        position: relative;
+    }
+    
+    .comment-box:before {
+        content: '"';
+        font-size: 2rem;
+        color: #ffa726;
+        position: absolute;
+        top: -5px;
+        left: 10px;
+        opacity: 0.3;
+    }
+    
+    .rating-stars {
+        color: #ffa726;
+        font-size: 0.9rem;
+        margin-top: 0.3rem;
     }
     
     .modern-btn {
@@ -116,19 +162,6 @@
         padding: 0.75rem 1.5rem;
         font-size: 1rem;
     }
-    
-    .service-number {
-        width: 35px;
-        height: 35px;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-weight: bold;
-        font-size: 0.9rem;
-    }
 </style>
 
 <section class="section">
@@ -138,13 +171,13 @@
                 <div class="card modern-card">
                     <div class="card-header" style="background: white; border-bottom: 2px solid #f0f0f0; border-radius: 15px 15px 0 0;">
                         <h4 style="color: #667eea; font-weight: 700; margin: 0;">
-                            <i class="fas fa-thumbs-up" style="margin-right: 10px;"></i>
-                            Neden Bizi Seçmelisiniz Listesi
+                            <i class="fas fa-comments" style="margin-right: 10px;"></i>
+                            Müşteri Yorumları Listesi
                         </h4>
                         <div class="card-header-action">
-                            <a href="/WhyChooseYummy/CreateWhyChooseYummy/" class="modern-btn btn-create">
+                            <a href="/Testimonial/CreateTestimonial/" class="modern-btn btn-create">
                                 <i class="fas fa-plus"></i>
-                                Yeni Alan Ekle
+                                Yeni Yorum Ekle
                             </a>
                         </div>
                     </div>
@@ -155,9 +188,10 @@
                                     <tr>
                                         <th scope="col" style="width: 5%;">#</th>
                                         <th scope="col" style="width: 5%;"></th>
-                                        <th scope="col" style="width: 25%;">Başlık</th>
-                                        <th scope="col" style="width: 45%;">Açıklama</th>
-                                        <th scope="col" style="width: 20%;" class="text-center">İşlemler</th>
+                                        <th scope="col" style="width: 15%;">Müşteri Adı</th>
+                                        <th scope="col" style="width: 12%;">Unvan</th>
+                                        <th scope="col" style="width: 40%;">Yorum</th>
+                                        <th scope="col" style="width: 23%;" class="text-center">İşlemler</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -166,38 +200,49 @@
                                         count++;
                                         <tr>
                                             <td>
-                                                <div class="service-number">
+                                                <div class="customer-number">
                                                     @count
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="service-icon">
-                                                    <i class="fas fa-heart"></i>
+                                                <div class="customer-avatar">
+                                                    @item.nameSurname.Substring(0, 1).ToUpper()
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="title-text">
-                                                    <i class="fas fa-check-circle" style="color: #43e97b; margin-right: 5px;"></i>
-                                                    @item.Title
+                                                <div class="customer-name">
+                                                    <i class="fas fa-user" style="color: #667eea; margin-right: 5px;"></i>
+                                                    @item.nameSurname
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="description-text">
-                                                    <i class="fas fa-quote-left" style="color: #ccc; font-size: 0.8rem;"></i>
-                                                    @item.Description
+                                                <span class="customer-title">
+                                                    <i class="fas fa-briefcase"></i> @item.title
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="comment-box">
+                                                    @item.comment
+                                                </div>
+                                                <div class="rating-stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
                                                 </div>
                                             </td>
                                             <td class="text-center">
                                                 <div style="display: flex; gap: 0.5rem; justify-content: center;">
-                                                    <a href="/WhyChooseYummy/ViewWhyChooseYummy/@item.ServiceId/" class="modern-btn btn-view" title="Görüntüle">
+                                                    <a href="/Testimonial/ViewTestimonial/@item.testimonialId/" class="modern-btn btn-view" title="Görüntüle">
                                                         <i class="fas fa-eye"></i>
                                                         Görüntüle
                                                     </a>
-                                                    <a href="/WhyChooseYummy/UpdateWhyChooseYummy/@item.ServiceId/" class="modern-btn btn-edit" title="Düzenle">
+                                                    <a href="/Testimonial/UpdateTestimonial/@item.testimonialId/" class="modern-btn btn-edit" title="Düzenle">
                                                         <i class="fas fa-edit"></i>
                                                         Düzenle
                                                     </a>
-                                                    <a href="/WhyChooseYummy/DeleteWhyChooseYummy/@item.ServiceId/" class="modern-btn btn-delete" title="Sil" onclick="return confirm('Bu öğeyi silmek istediğinize emin misiniz?');">
+                                                    <a href="/Testimonial/DeleteTestimonial/@item.testimonialId/" class="modern-btn btn-delete" title="Sil" onclick="return confirm('Bu yorumu silmek istediğinize emin misiniz?');">
                                                         <i class="fas fa-trash-alt"></i>
                                                         Sil
                                                     </a>
@@ -212,7 +257,7 @@
                     <div class="card-footer" style="background: white; border-top: 2px solid #f0f0f0;">
                         <div style="color: #999; font-size: 0.875rem;">
                             <i class="fas fa-info-circle"></i>
-                            Toplam <strong style="color: #667eea;">@Model.Count</strong> özellik listelendi
+                            Toplam <strong style="color: #667eea;">@Model.Count</strong> müşteri yorumu listelendi
                         </div>
                     </div>
                 </div>
@@ -221,7 +266,7 @@
     </div>
 </section>
 
---------------------------------------------------------------------
+---------------------------------------------
 
 Default Kodlar:
 
@@ -231,15 +276,16 @@ Default Kodlar:
             <div class="col-12 col-md-12 col-lg-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4>Neden Bizi Seçmelisiniz Listesi</h4>
+                        <h4>Müşteri Yorumları Listesi</h4>
                     </div>
                     <div class="card-body">
                         <table class="table">
                             <thead>
                                 <tr>
                                     <th scope="col">#</th>
-                                    <th scope="col">Başlık</th>
-                                    <th scope="col">Açıklama</th>
+                                    <th scope="col">Müşteri Adı</th>
+                                    <th scope="col">Müşteri Unvanı</th>
+                                    <th scope="col">Müşteri Yorumu</th>
                                     <th scope="col">Sil</th>
                                     <th scope="col">Güncelle</th>
                                 </tr>
@@ -250,15 +296,16 @@ Default Kodlar:
                                     count++;
                                     <tr>
                                         <th scope="row">@count</th>
-                                        <td>@item.Title</td>
-                                        <td>@item.Description</td>
-                                        <td><a href="/WhyChooseYummy/DeleteWhyChooseYummy/@item.ServiceId/" class="btn btn-danger">Sil</a></td>
-                                        <td><a href="/WhyChooseYummy/UpdateWhyChooseYummy/@item.ServiceId/" class="btn btn-success">Güncelle</a></td>
+                                        <td>@item.nameSurname</td>
+                                        <td>@item.title</td>
+                                        <td>@item.comment</td>
+                                        <td><a href="/Testimonial/DeleteTestimonial/@item.testimonialId/" class="btn btn-danger">Sil</a></td>
+                                        <td><a href="/Testimonial/UpdateTestimonial/@item.testimonialId/" class="btn btn-success">Güncelle</a></td>
                                     </tr>
                                 }
                             </tbody>
                         </table>
-                        <a href="/WhyChooseYummy/CreateWhyChooseYummy/" class="btn btn-info">Yeni Alan Girişi</a>
+                        <a href="/Testimonial/CreateTestimonial/" class="btn btn-info">Yeni Yorum Girişi</a>
                     </div>
                 </div>
             </div>

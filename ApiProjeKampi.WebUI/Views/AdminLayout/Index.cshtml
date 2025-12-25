@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     Layout = null;
 }
 
@@ -18,7 +17,13 @@
             
             <!-- Main Content -->
             <div class="main-content">
-            @RenderBody()
+
+                <section class="admin-page">
+                    <div class="admin-container">
+                        @RenderBody()
+                    </div>
+                </section>
+
                 @await Component.InvokeAsync("_RightSettingsAdminLayoutComponentPartial")
             </div>
 

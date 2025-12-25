@@ -1,6 +1,6 @@
-﻿﻿@model List<ResultWhyChooseYummyDto>
+﻿﻿@model List<ResultChefDto>
 @{
-    ViewData["Title"] = "WhyChooseYummyList";
+    ViewData["Title"] = "ChefList";
     Layout = "~/Views/AdminLayout/Index.cshtml";
     int count = 0;
 }
@@ -53,29 +53,63 @@
         vertical-align: middle;
     }
     
-    .service-icon {
-        width: 45px;
-        height: 45px;
+    .chef-avatar {
+        width: 50px;
+        height: 50px;
         background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
-        border-radius: 10px;
+        border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
         color: white;
+        font-weight: bold;
         font-size: 1.2rem;
+        border: 3px solid white;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
     
-    .title-text {
+    .chef-number {
+        width: 35px;
+        height: 35px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        font-size: 0.9rem;
+    }
+    
+    .chef-name {
         color: #333;
         font-size: 1rem;
         font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
     }
     
-    .description-text {
+    .chef-hat-icon {
+        color: #fa709a;
+        font-size: 1rem;
+    }
+    
+    .chef-title-badge {
+        background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+        color: #333;
+        padding: 0.4rem 0.9rem;
+        border-radius: 15px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        display: inline-block;
+    }
+    
+    .chef-description {
         color: #666;
         font-size: 0.9rem;
         line-height: 1.5;
-        max-width: 600px;
+        max-width: 500px;
     }
     
     .modern-btn {
@@ -116,19 +150,6 @@
         padding: 0.75rem 1.5rem;
         font-size: 1rem;
     }
-    
-    .service-number {
-        width: 35px;
-        height: 35px;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-weight: bold;
-        font-size: 0.9rem;
-    }
 </style>
 
 <section class="section">
@@ -138,13 +159,13 @@
                 <div class="card modern-card">
                     <div class="card-header" style="background: white; border-bottom: 2px solid #f0f0f0; border-radius: 15px 15px 0 0;">
                         <h4 style="color: #667eea; font-weight: 700; margin: 0;">
-                            <i class="fas fa-thumbs-up" style="margin-right: 10px;"></i>
-                            Neden Bizi Seçmelisiniz Listesi
+                            <i class="fas fa-user-chef" style="margin-right: 10px;"></i>
+                            Şef Listesi
                         </h4>
                         <div class="card-header-action">
-                            <a href="/WhyChooseYummy/CreateWhyChooseYummy/" class="modern-btn btn-create">
+                            <a href="/Chef/CreateChef/" class="modern-btn btn-create">
                                 <i class="fas fa-plus"></i>
-                                Yeni Alan Ekle
+                                Yeni Şef Ekle
                             </a>
                         </div>
                     </div>
@@ -155,8 +176,9 @@
                                     <tr>
                                         <th scope="col" style="width: 5%;">#</th>
                                         <th scope="col" style="width: 5%;"></th>
-                                        <th scope="col" style="width: 25%;">Başlık</th>
-                                        <th scope="col" style="width: 45%;">Açıklama</th>
+                                        <th scope="col" style="width: 15%;">Şef Adı</th>
+                                        <th scope="col" style="width: 18%;">Başlık</th>
+                                        <th scope="col" style="width: 37%;">Açıklama</th>
                                         <th scope="col" style="width: 20%;" class="text-center">İşlemler</th>
                                     </tr>
                                 </thead>
@@ -166,38 +188,43 @@
                                         count++;
                                         <tr>
                                             <td>
-                                                <div class="service-number">
+                                                <div class="chef-number">
                                                     @count
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="service-icon">
-                                                    <i class="fas fa-heart"></i>
+                                                <div class="chef-avatar">
+                                                    @item.NameSurname.Substring(0, 1).ToUpper()
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="title-text">
-                                                    <i class="fas fa-check-circle" style="color: #43e97b; margin-right: 5px;"></i>
-                                                    @item.Title
+                                                <div class="chef-name">
+                                                    <i class="fas fa-hat-chef chef-hat-icon"></i>
+                                                    @item.NameSurname
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="description-text">
-                                                    <i class="fas fa-quote-left" style="color: #ccc; font-size: 0.8rem;"></i>
+                                                <span class="chef-title-badge">
+                                                    <i class="fas fa-award"></i> @item.Title
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="chef-description">
+                                                    <i class="fas fa-quote-left" style="color: #ccc; font-size: 0.7rem; margin-right: 5px;"></i>
                                                     @item.Description
                                                 </div>
                                             </td>
                                             <td class="text-center">
                                                 <div style="display: flex; gap: 0.5rem; justify-content: center;">
-                                                    <a href="/WhyChooseYummy/ViewWhyChooseYummy/@item.ServiceId/" class="modern-btn btn-view" title="Görüntüle">
+                                                    <a href="/Chef/ViewChef/@item.ChefId/" class="modern-btn btn-view" title="Görüntüle">
                                                         <i class="fas fa-eye"></i>
                                                         Görüntüle
                                                     </a>
-                                                    <a href="/WhyChooseYummy/UpdateWhyChooseYummy/@item.ServiceId/" class="modern-btn btn-edit" title="Düzenle">
+                                                    <a href="/Chef/UpdateChef/@item.ChefId/" class="modern-btn btn-edit" title="Düzenle">
                                                         <i class="fas fa-edit"></i>
                                                         Düzenle
                                                     </a>
-                                                    <a href="/WhyChooseYummy/DeleteWhyChooseYummy/@item.ServiceId/" class="modern-btn btn-delete" title="Sil" onclick="return confirm('Bu öğeyi silmek istediğinize emin misiniz?');">
+                                                    <a href="/Chef/DeleteChef/@item.ChefId/" class="modern-btn btn-delete" title="Sil" onclick="return confirm('Bu şefi silmek istediğinize emin misiniz?');">
                                                         <i class="fas fa-trash-alt"></i>
                                                         Sil
                                                     </a>
@@ -212,7 +239,7 @@
                     <div class="card-footer" style="background: white; border-top: 2px solid #f0f0f0;">
                         <div style="color: #999; font-size: 0.875rem;">
                             <i class="fas fa-info-circle"></i>
-                            Toplam <strong style="color: #667eea;">@Model.Count</strong> özellik listelendi
+                            Toplam <strong style="color: #667eea;">@Model.Count</strong> şef listelendi
                         </div>
                     </div>
                 </div>
@@ -221,7 +248,7 @@
     </div>
 </section>
 
---------------------------------------------------------------------
+--------------------------------------------------------
 
 Default Kodlar:
 
@@ -231,13 +258,14 @@ Default Kodlar:
             <div class="col-12 col-md-12 col-lg-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4>Neden Bizi Seçmelisiniz Listesi</h4>
+                        <h4>Şef Listesi</h4>
                     </div>
                     <div class="card-body">
                         <table class="table">
                             <thead>
                                 <tr>
                                     <th scope="col">#</th>
+                                    <th scope="col">Şef Adı</th>
                                     <th scope="col">Başlık</th>
                                     <th scope="col">Açıklama</th>
                                     <th scope="col">Sil</th>
@@ -250,15 +278,16 @@ Default Kodlar:
                                     count++;
                                     <tr>
                                         <th scope="row">@count</th>
+                                        <td>@item.NameSurname</td>
                                         <td>@item.Title</td>
                                         <td>@item.Description</td>
-                                        <td><a href="/WhyChooseYummy/DeleteWhyChooseYummy/@item.ServiceId/" class="btn btn-danger">Sil</a></td>
-                                        <td><a href="/WhyChooseYummy/UpdateWhyChooseYummy/@item.ServiceId/" class="btn btn-success">Güncelle</a></td>
+                                        <td><a href="/Chef/DeleteChef/@item.ChefId/" class="btn btn-danger">Sil</a></td>
+                                        <td><a href="/Chef/UpdateChef/@item.ChefId/" class="btn btn-success">Güncelle</a></td>
                                     </tr>
                                 }
                             </tbody>
                         </table>
-                        <a href="/WhyChooseYummy/CreateWhyChooseYummy/" class="btn btn-info">Yeni Alan Girişi</a>
+                        <a href="/Chef/CreateChef/" class="btn btn-info">Yeni Şef Girişi</a>
                     </div>
                 </div>
             </div>

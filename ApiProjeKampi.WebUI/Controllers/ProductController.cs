@@ -37,11 +37,11 @@ namespace ApiProjeKampi.WebUI.Controllers
             var jsonData = await responseMessage.Content.ReadAsStringAsync();
             var values = JsonConvert.DeserializeObject<List<ResultCategoryDto>>(jsonData);
             List<SelectListItem> categoryValues = (from x in values
-                                            select new SelectListItem
-                                            {
-                                                Text = x.CategoryName,
-                                                Value = x.CategoryId.ToString()
-                                            }).ToList();
+                                                   select new SelectListItem
+                                                   {
+                                                       Text = x.CategoryName,
+                                                       Value = x.CategoryId.ToString()
+                                                   }).ToList();
             ViewBag.v = categoryValues;
             return View();
         }
